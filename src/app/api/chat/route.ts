@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     const { messages } = await request.json();
 
     const completion = await openai.chat.completions.create({
-      model: 'ft:gpt-3.5-turbo-0125:personal:lumina-cypher:BGvvT5rO',
+      model: 'ft:gpt-3.5-turbo-0125:personal:lumina-cypher-2:BGw6UJRa',
       messages,
       stream: false,
     });
